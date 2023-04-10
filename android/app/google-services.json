@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "992404594483",
+    "project_id": "casette-9297f",
+    "storage_bucket": "casette-9297f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992404594483:android:f83a2fb325ddafca7fa846",
+        "android_client_info": {
+          "package_name": "com.example.casette"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992404594483-4sciftoirmmeq240j2vbq63d8vk5ftup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.casette",
+            "certificate_hash": "e944d225b72b29a119eeb1cbda91f0e67b88be56"
+          }
+        },
+        {
+          "client_id": "992404594483-pv7f95fgi5abask08l1okbldcldvom1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhwr9OM1AS3aZ43qEaoRORD4lLoCVaNTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992404594483-pv7f95fgi5abask08l1okbldcldvom1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

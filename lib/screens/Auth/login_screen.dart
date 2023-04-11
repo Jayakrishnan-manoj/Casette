@@ -1,13 +1,18 @@
+import 'package:casette/providers/auth_provider.dart';
 import 'package:casette/screens/Auth/otp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:casette/constants/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
+import '../Presentation/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final Auth = Provider.of<AuthProvider>(context, listen: false);
     return Scaffold(
       backgroundColor: kScaffoldBackgroundColor,
       body: Column(
@@ -43,11 +48,17 @@ class LoginScreen extends StatelessWidget {
             height: 50,
             child: ElevatedButton(
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const OTPScreen(),
-                  ),
-                );
+                Auth.isSignedIn == true
+                    ? Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) => HomeScreen(),
+                        ),
+                      )
+                    : Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => const OTPScreen(),
+                        ),
+                      );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: kAppBarColor,

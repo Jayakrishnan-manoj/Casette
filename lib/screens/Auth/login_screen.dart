@@ -48,17 +48,20 @@ class LoginScreen extends StatelessWidget {
             height: 50,
             child: ElevatedButton(
               onPressed: () {
-                Auth.isSignedIn == true
-                    ? Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
-                        ),
-                      )
-                    : Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => const OTPScreen(),
-                        ),
-                      );
+                if (Auth.isSignedIn == true) {
+                  
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => const HomeScreen(),
+                    ),
+                  );
+                } else {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const OTPScreen(),
+                    ),
+                  );
+                }
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: kAppBarColor,

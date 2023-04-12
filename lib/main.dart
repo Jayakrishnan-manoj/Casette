@@ -1,4 +1,6 @@
 import 'package:casette/providers/auth_provider.dart';
+import 'package:casette/screens/Auth/confirm_screen.dart';
+import 'package:casette/screens/Auth/new_user_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

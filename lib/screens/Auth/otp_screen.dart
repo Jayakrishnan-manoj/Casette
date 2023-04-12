@@ -1,9 +1,10 @@
 import 'package:casette/constants/constants.dart';
 import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
+import '../../providers/auth_provider.dart';
 
 class OTPScreen extends StatefulWidget {
   const OTPScreen({super.key});
@@ -145,13 +146,7 @@ class _OTPScreenState extends State<OTPScreen> {
               width: 200,
               height: 50,
               child: ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => const OTPScreen(),
-                    ),
-                  );
-                },
+                onPressed: () => sendPhoneNumber(),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: kAppBarColor,
                   shape: RoundedRectangleBorder(
@@ -170,5 +165,11 @@ class _OTPScreenState extends State<OTPScreen> {
         ),
       ),
     );
+  }
+
+  void sendPhoneNumber() {
+    final auth = Provider.of<AuthProvider>(context, listen: false);
+    String phoneNumber = phoneController.text.trim();
+    auth.signInWithPhone(context, "+${country.phoneCode}$phoneNumber");
   }
 }

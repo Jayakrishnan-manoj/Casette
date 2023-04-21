@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  camera: ^0.10.4
   cloud_firestore: ^4.5.0
   country_picker: ^2.0.20
   cupertino_icons: ^1.0.2
@@ -38,9 +39,11 @@ dependencies:
     sdk: flutter
   google_fonts: ^4.0.3
   image_picker: ^0.8.7+2
+  path_provider: ^2.0.14
   pinput: ^2.2.31
   provider: ^6.0.5
   shared_preferences: ^2.1.0
+  video_player: ^2.6.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0

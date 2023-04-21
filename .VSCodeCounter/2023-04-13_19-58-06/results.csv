@@ -1,0 +1,12 @@
+"filename", "language", "Dart", "comment", "blank", "total"
+"g:\JayK\Internship\casette\lib\constants\constants.dart", "Dart", 4, 0, 1, 5
+"g:\JayK\Internship\casette\lib\main.dart", "Dart", 28, 0, 5, 33
+"g:\JayK\Internship\casette\lib\models\user_model.dart", "Dart", 36, 0, 4, 40
+"g:\JayK\Internship\casette\lib\providers\auth_provider.dart", "Dart", 180, 0, 17, 197
+"g:\JayK\Internship\casette\lib\screens\Auth\confirm_screen.dart", "Dart", 200, 0, 6, 206
+"g:\JayK\Internship\casette\lib\screens\Auth\login_screen.dart", "Dart", 79, 1, 5, 85
+"g:\JayK\Internship\casette\lib\screens\Auth\new_user_screen.dart", "Dart", 151, 0, 8, 159
+"g:\JayK\Internship\casette\lib\screens\Auth\otp_screen.dart", "Dart", 168, 0, 8, 176
+"g:\JayK\Internship\casette\lib\screens\Presentation\home_screen.dart", "Dart", 17, 0, 4, 21
+"g:\JayK\Internship\casette\lib\widgets\reusables.dart", "Dart", 71, 0, 5, 76
+"Total", "-", 934, 1, 63, 998
